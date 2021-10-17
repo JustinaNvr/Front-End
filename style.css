@@ -1,0 +1,48 @@
+body {
+    font-family: monospace;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 25px;
+    padding: 2px;
+}
+
+button {
+    background-color: rgba(95, 158, 160, 0.5);
+    font-family: monospace;
+    border: 1px solid grey;
+    transition-duration: 0.4s;
+}
+
+table, td, th {
+    background-color: rgba(95, 158, 160, 0.4);
+    border: 1px solid black ;
+    border-collapse: collapse;
+    text-align: left;
+    padding: 5px;
+    margin: 10px;
+
+}
+th {
+    background-color: rgb(95, 158, 160);
+    height: 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+tr:nth-child(odd) {
+    background-color: rgba(95, 158, 160, 0.8);
+}
+
+td:nth-child(1), td:nth-child(2) {
+    text-align: center;
+}
+
+tr:not(:first-child):hover, button:hover {
+    background-color: rgb(240, 248, 255);
+    cursor: pointer;
+    transition-duration: 0.2s;
+
+}
