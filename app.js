@@ -1,4 +1,4 @@
-//•	Gauti duomenis (GET): https://jsonplaceholder.typicode.com/posts
+// Gauti duomenis (GET): https://jsonplaceholder.typicode.com/posts
 
 fetch('https://jsonplaceholder.typicode.com/posts/')
 .then(res =>{
@@ -20,19 +20,35 @@ fetch('https://jsonplaceholder.typicode.com/posts/')
         })
 })
 
+/////////////////////////////////////////////////////////////////////////
 // Gauti vieną įrašą, detales (GET): https://jsonplaceholder.typicode.com/posts/{ID}
 
-// document.getElementById("showData").addEventListener("click", function (args) {
-//     if (args.target.classList.contains("e-rowcell")) {
+
+let body = document.getElementById('data');
+let rows = body.getElementsByTagName('tr');
+console.log(rows);
+
+// document.addEventListener('DOMContentLoader', () => {
+//     let body = document.getElementById('data');
+//     let rows = body.getElementsByTagName('tr');
+//     console.log(rows);
+
+// rows.forEach(row => {
+//     row.addEventListener('onclick', () =>{
+//         window.location.href = 'https://jsonplaceholder.typicode.com/posts/{ID}';
+//     })
+// })
+// })
+
+// document.getElementById('data').addEventListener('click', function (args) {
+//     if (args.target.classList.contains('id')) {
 //         let rowInfo = grid.getRowInfo(args.target);
 //         // Get row information
 //         console.log(rowInfo.rowData);
+//     }
+// })
 
-function getData() {
-    // let row = this.dataItem
-    // document.getElementById('showData').querySelectorAll('.row-data')
-}
-
+/////////////////////////////////////////////////////////////////////////
 // Pridėti naują įrašą (POST, šis endpoint nepridės įrašo serveryje, o grąžins jums tą, kurį siuntėte): https://jsonplaceholder.typicode.com/posts
 function addData() {
     window.open('https://jsonplaceholder.typicode.com/posts')
